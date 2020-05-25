@@ -1,0 +1,318 @@
+// -----------------
+// GENERAL SETTINGS
+// -----------------
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.bg-white-85{
+    background-color: rgba(255, 255, 255, 0.85)
+}
+.text-main{
+    color: $main-color;
+}
+.text-second{
+    color: $secondary-color;
+}
+.text-shadow{
+    // text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black, 0 0 5px white;
+    text-shadow: 1px 1px 1px #000, 0 0 1px #000, 0 0 2px #000, 0 0 3px #FFF, 0 0 5px #FFF,0 0 10px #FFF,0 0 20px #FFF, 0 0 30px #FFF, 0 0 40px #FFF, 0 0 55px #FFF, 0 0 75px #FFF;
+}
+.text-shadow-sm{
+    text-shadow: 0 0 1px #000, 0 0 2px #FFF,0 0 3px #FFF,0 0 4px #FFF,0 0 5px #FFF;
+}
+li {
+    list-style-type: none;
+}
+nav li {
+    display: inline;
+    margin: 0px $navbar_space;
+}
+
+.spaceBar{
+    height: 0.25*$navbar_space;
+    background-color: $main-color;
+    width: 100%;
+}
+//Media query font-size settings:
+h1 {
+    @include phone-view{
+        font-size: 1.5rem;
+    }
+    @include tablet-view{
+        font-size: 2rem;
+    }}
+h2, .navbar-toggler {
+    @include phone-view{
+        font-size: 1rem;
+    }
+    @include tablet-view{
+        font-size: 1.15rem;
+    }}
+h3{
+    @include phone-view{
+        font-size: .75rem;
+    }
+    @include tablet-view{
+        font-size: 1rem;
+    }}
+
+p, h5 {
+    @include phone-view{
+        font-size: .75rem;
+    }
+    @include tablet-view{
+        font-size: .85rem;
+    }}
+.firstRow-phoneView{
+    @include phone-view {
+        order: -1;
+        padding-bottom: 5%;
+        & h3{
+            font-size: 1rem;
+        }
+    }
+}
+#frmContact{
+    @include phone-view{
+        font-size: .7rem!important;
+    }
+}
+// -----------------
+// HEADER and NAVBAR
+// -----------------
+.bg-navbar{
+    background: linear-gradient(to right, $main-color, rgba(255, 255, 255, 0.65) 60%);
+}
+.headerFirstRow{
+    @include phone-view{
+        flex: 0 0 75%;
+        max-width: 75%;
+        display: inline-flex;
+        & h2, h3 {
+            font-size: 1.5rem!important    
+    }
+}
+}
+.headerSecondRow{
+    @include phone-view{
+        display: inline-flex;
+        flex: 0 0 25%;
+}
+
+}
+.headerTitle{
+    margin-top: 2em;
+}
+
+.navbar{
+    flex-direction: row-reverse;
+    @include phone-view{
+        float: right;
+        display: inline;
+        flex: 0 0 25%;
+        max-width: 100%;
+    }
+}
+
+.dropdown-menu{
+    width: fit-content;
+    left: auto;
+    right: 1%!important
+}
+
+.header {
+    //REMEMBER TO AUTOMATE GETTING HEIGHT HERE
+    //----------------------------------------!!!
+    height: 80vh;
+    @include phone-view{
+        height: 50vh;
+    }
+}
+
+.phone-icon{
+    width: 5%;
+    vertical-align: top;
+}
+
+#headerText{
+    margin-top: 2em;
+}
+
+.scoreImage {
+    width: 6em;
+}
+
+.scores{
+    @include phone-view{
+        display: none!important;
+    }
+    @include tablet-view{
+        display: none!important;
+    }
+    overflow: hidden!important;
+    display: none;
+    position: absolute;
+    bottom: 0em;
+    width: 100%;
+    animation-duration: 4s;
+    animation-name: slidein;
+  }
+
+// -----------------
+// FOOTER
+// -----------------
+.footer{
+    height: 30vh;
+    @include phone-view{
+            height: inherit;
+        }
+    & h1, h2 {
+        padding-top: 2px!important;
+    }     
+}
+.footer-row{
+    height: 10vh;
+}
+.bg-footer{
+    background-image: linear-gradient(#343a40 20%, transparent 60%);
+}
+
+// -----------------
+// MAIN PAGE
+// -----------------
+
+//PORTFOLIO STYLE
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+}
+.slider-item {
+    margin: $gutter;
+    width: 20%;
+}
+.slider-img {
+    height: 200px;
+    opacity: 0.7;
+    width: 100%;
+    &:hover{
+        opacity: 1;
+    }    
+}
+.portfolio img {
+    height: 350px;
+    margin: auto;
+}
+.portfolio {
+    width: 40%;
+    margin: auto;
+    color: rgb(255, 223, 223);
+}
+.card{
+    flex: 0 0 21%!important;
+    margin: 5px auto!important;    
+
+    @include tablet-view{
+        flex: 1 0 45%!important;
+    }
+}
+
+// CONTACT PAGE
+.contact-page {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+//REST MAIN PAGE STYLE
+.partners-img{
+    height: 80px;
+    margin: 0px 25px;
+}
+.materials-img{
+    height: 80px;
+    margin: 0px 25px;
+}
+.bg-second-image{
+    color: aliceblue;
+    background: url("/images/secondary-image.jpg") fixed;
+    background-size: cover;
+    z-index: -5;
+    height: 35vh;
+    width: 100%;
+}
+.stepImage{
+    @include phone-view{
+        width: 100%;
+    }
+    @include tablet-view{
+        width: 100%;
+    }
+}
+.serviceCard{
+    height: 100px;
+    width: 100px;
+    margin: 2% 0%;
+    position: relative;
+    @include phone-view{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+.service-text{
+    position: absolute;
+    top: 20%;
+    width: 100%;@include phone-view{
+        width: 50%;
+    }
+}
+.service-img{
+    opacity: 0.2;
+    height: 100px;
+    position: relative;
+    @include phone-view{
+        height: 50px;
+    }
+}
+.demoInputBox{
+    width: 75%;
+}
+.formLabel{
+    font-weight: bold;
+    padding-top: 0.1rem;
+}
+.hide-on-phone{    
+    @include phone-view{
+        display: none;
+    }
+}
+.hide-on-tablet{    
+    @include tablet-view{
+        display: none;
+    }
+}
+//----------
+//   ANIMATIONS
+//----------
+  
+  @keyframes slidein {
+    from {
+      opacity: 0;
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      opacity: 1;
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+//----------
+//   MEDIA QUERIES
+//----------
+
+

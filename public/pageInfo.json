@@ -1,0 +1,51 @@
+{
+    "pageInfo": {
+    "pageName": "wykonczenie-wnetrz.gda.pl",
+    "phoneNumber": "784-567-628",
+    "navElements": [
+        "Strona główna",
+        "Zakres usług",
+        "Realizacje",
+        "Współpraca",
+        "Kontakt"
+    ],
+    "filesToDownload":{
+        "name": "umowa",
+        "url": "/static/images/umowa.pdf"
+    },
+    "scores":[{
+        "text": "Lat w branży",
+        "score": "14",
+        "img_url": "/static/images/icons/time.png"
+    },{
+        "text": "Zadowolonych klientów",
+        "score": "232",
+        "img_url": "/static/images/icons/avatar.png"
+    },{
+        "text": "Wykończonych mieszkań",
+        "score": "187",
+        "img_url": "/static/images/icons/house.png"
+    },{
+        "text": "Ułożonych kafelek",
+        "score": "46987755",
+        "img_url": "/static/images/icons/tiles.png"
+    }],
+    "steps":[{
+        "id": 1,
+        "text": "Kontakt telefoniczny",
+        "img_url": "/static/images/icons/step1.png"
+    },{
+        "id": 2,
+        "text": "Wycena prac i podpisanie umowy",
+        "img_url": "/static/images/icons/step2.png"
+    },{
+        "id": 3,
+        "text": "Realizacja prac",
+        "img_url": "/static/images/icons/step3.png"
+    },{
+        "id": 4,
+        "text": "Odbiór wykonanych prac",
+        "img_url": "/static/images/icons/step4.png"
+    }]    
+}
+}

@@ -1,0 +1,25 @@
+$main-color: #241f19;
+$secondary-color: #6B5D40;
+$navbar_space: 10px;
+$gutter: 5px;
+
+//Media queries breakpoints
+$phone: 375px;
+$tablet: 900px;
+$desktop: 1024px;
+
+@mixin phone-view {
+    @media (max-width: $phone) { @content; }
+  }
+  @mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  }
+  @mixin tablet-view {
+    @media (min-width: $phone + 1) and (max-width: $tablet) { @content; }
+  }
+  @mixin for-desktop-up {
+    @media (min-width: 1200px) { @content; }
+  }
+  @mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
