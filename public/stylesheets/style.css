@@ -147,6 +147,17 @@ nav li {
 .bg-footer {
   background-image: linear-gradient(#343a40 20%, transparent 60%); }
 
+.main-image {
+  color: aliceblue;
+  margin: auto;
+  background: url("../images/main-images/main-image3.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  opacity: 1;
+  z-index: -10 !important;
+  width: 100%; }
+
 .slider {
   display: flex;
   flex-wrap: wrap; }
@@ -161,6 +172,9 @@ nav li {
   width: 100%; }
   .slider-img:hover {
     opacity: 1; }
+  @media (max-width: 375px) {
+    .slider-img {
+      height: 150px !important; } }
 
 .portfolio img {
   height: 350px;
@@ -177,6 +191,9 @@ nav li {
   @media (min-width: 376px) and (max-width: 900px) {
     .card {
       flex: 1 0 45% !important; } }
+  @media (max-width: 375px) {
+    .card {
+      flex: 0 1 45% !important; } }
 
 .contact-page {
   position: fixed;

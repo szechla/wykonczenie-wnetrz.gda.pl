@@ -20,8 +20,8 @@ $services = array_map(function($e){
 
 for ($x = 0; $x <= 5; $x++) {        
     // echo "Element: ".$portfolio[$x]."<br>";
-    $dir = '/images/portfolio/'.$portfolio[$x];
-    $portfolio[$x] = array_slice(scandir($dir), 2);
+    // $dir = '/images/portfolio/'.$portfolio[$x];
+    // $portfolio[$x] = array_slice(scandir($dir), 2);
     // echo $portfolio[$x]."<br>";
   };
 
@@ -29,8 +29,8 @@ for ($x = 0; $x <= 5; $x++) {
 $servicesJSON = json_encode($services);
 $portfolioJSON = json_encode($portfolio);
 
-// echo $servicesJSON;
-echo $portfolioJSON;
+echo $servicesJSON;
+// echo $portfolioJSON;
 
 
 ?>

@@ -20,16 +20,6 @@ export default {
 </script>
 
 <style>
-.main-image{
-    color: aliceblue;
-    margin: auto;
-    background: url("../public/images/main-images/main-image.jpg");
-    background-size: cover;
-    height: 100vh;
-    opacity: 1;
-    z-index: -10!important;
-    width: 100%;
-}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

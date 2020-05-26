@@ -182,8 +182,19 @@ p, h5 {
 // -----------------
 // MAIN PAGE
 // -----------------
-
-//PORTFOLIO STYLE
+// HOME PAGE
+.main-image{
+    color: aliceblue;
+    margin: auto;
+    background: url("../images/main-images/main-image3.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    opacity: 1;
+    z-index: -10!important;
+    width: 100%;
+}
+// PORTFOLIO
 .slider {
     display: flex;
     flex-wrap: wrap;
@@ -198,6 +209,9 @@ p, h5 {
     width: 100%;
     &:hover{
         opacity: 1;
+    }
+    @include phone-view {
+        height: 150px!important;
     }    
 }
 .portfolio img {
@@ -215,6 +229,9 @@ p, h5 {
 
     @include tablet-view{
         flex: 1 0 45%!important;
+    }
+    @include phone-view{
+        flex: 0 1 45%!important;
     }
 }
 
