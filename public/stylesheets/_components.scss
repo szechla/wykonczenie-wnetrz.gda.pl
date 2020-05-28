@@ -211,7 +211,7 @@ p, h5 {
         opacity: 1;
     }
     @include phone-view {
-        height: 150px!important;
+        height: 120px!important;
     }    
 }
 .portfolio img {
@@ -231,10 +231,17 @@ p, h5 {
         flex: 1 0 45%!important;
     }
     @include phone-view{
-        flex: 0 1 45%!important;
+        flex: 0 1 47%!important;
     }
 }
 
+.card-deck{
+    @include phone-view{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0px!important;
+    }
+}
 // CONTACT PAGE
 .contact-page {
     position: fixed;

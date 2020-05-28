@@ -174,7 +174,7 @@ nav li {
     opacity: 1; }
   @media (max-width: 375px) {
     .slider-img {
-      height: 150px !important; } }
+      height: 120px !important; } }
 
 .portfolio img {
   height: 350px;
@@ -193,7 +193,13 @@ nav li {
       flex: 1 0 45% !important; } }
   @media (max-width: 375px) {
     .card {
-      flex: 0 1 45% !important; } }
+      flex: 0 1 47% !important; } }
+
+@media (max-width: 375px) {
+  .card-deck {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px !important; } }
 
 .contact-page {
   position: fixed;
